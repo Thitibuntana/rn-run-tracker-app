@@ -29,6 +29,7 @@ export default function RootLayout() {
         },
         headerTintColor: "#fff",
         headerBackButtonDisplayMode: "minimal",
+        headerTitleAlign: "center",
         headerTitleStyle: {
           fontFamily: "Kanit_700Bold",
           fontSize: 20,
@@ -37,6 +38,7 @@ export default function RootLayout() {
       }}
     >
       <Stack.Screen name="index" options={{ headerShown: false }} />
+      <Stack.Screen name="login" options={{ headerShown: false }} />
       <Stack.Screen name="add" options={{ title: "Add Run" }} />
       <Stack.Screen name="[id]" options={{ title: "Run Details" }} />
       <Stack.Screen name="run" options={{ title: "Run Tracker" }} />
